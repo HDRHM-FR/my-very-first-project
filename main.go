@@ -1,9 +1,9 @@
 package main
 
 import (
-	//"HDRHM/Bank"
+	//"github.com/my-very-first-project/Bank"
 	Quadraticequation "github.com/my-very-first-project/Quadratic-Equation"
-	//"HDRHM/Bank"
+	//"github.com/my-very-first-project/Bank"
 )
 
 func main() {
