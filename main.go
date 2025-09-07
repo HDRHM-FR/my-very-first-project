@@ -2,7 +2,7 @@ package main
 
 import (
 	//"HDRHM/Bank"
-	Quadraticequation "HDRHM/Quadratic-Equation"
+	Quadraticequation "github.com/my-very-first-project/Quadratic-Equation"
 	//"HDRHM/Bank"
 )
 
