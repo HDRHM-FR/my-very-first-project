@@ -51,7 +51,6 @@ func sum() (int, error) {
 	if err != nil {
 		panic("please enter a valid number!!")
 	}
-
 	_, errr := fmt.Scanln(&b)
 	if errr != nil {
 		panic("please enter a valid number!!")
