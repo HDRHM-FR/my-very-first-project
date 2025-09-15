@@ -19,7 +19,7 @@ func Array() {
 	fmt.Println(m)
 
 	// section : slices
-	// more info : the slices act like arrays but we can put index as many as we want
+	// more info : the slices act like arrays but we can put more indexes as many as we want
 
 	b := []int{1, 2, 3, 4, 56, 7, 8, 9, 6}
 
