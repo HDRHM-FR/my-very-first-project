@@ -1,7 +1,6 @@
 package Error
 
 import (
-	"errors"
 	"fmt"
 )
 
@@ -35,22 +34,30 @@ func ER() {
 
 	// fmt.Printf("result : %v", number1+number2)
 
-	// section : errors package
+	// section : "errors" package
 	// note : this method is more efficiant
 
 	_, err3 := sum()
-	if err3 != nil {
-		panic(err3.Error())
-
+	if err3 == nil {
+		fmt.Println("")
 	} else {
-		fmt.Print("result : ")
-		fmt.Println(sum())
+		return
 	}
 }
 
 func sum() (int, error) {
 	var a, b int
-	fmt.Scanln(&a)
-	fmt.Scanln(&b)
-	return a + b, errors.New("sum couldnt perform, please enter a valid number")
+	_, err := fmt.Scanln(&a)
+	if err != nil {
+		panic("please enter a valid number!!")
+	}
+
+	_, errr := fmt.Scanln(&b)
+	if errr != nil {
+		panic("please enter a valid number!!")
+	} else {
+		fmt.Printf("result :%v\n", a+b)
+	}
+	return a + b, nil
+
 }
