@@ -1,7 +1,7 @@
 package main
 
-import "https/github.com/HDRHM-FR/my-very-first-project.git/Error"
-
+import
+// "https/github.com/HDRHM-FR/my-very-first-project.git/Error"
 //"https/github.com/HDRHM-FR/my-very-first-project.git/Interface"
 //Quadraticequation "https/github.com/HDRHM-FR/my-very-first-project.git/Quadratic-Equation"
 //"https/github.com/HDRHM-FR/my-very-first-project.git/Bank"
@@ -13,6 +13,7 @@ func main() {
 	//Arrays.Array()
 	//Quadraticequation.Math()
 	//Bank.Welcome()
-	Error.ER()
+	//Error.ER()
 
+	
 }

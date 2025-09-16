@@ -36,8 +36,8 @@ func printArea(g geo) {
 
 func Salam() {
 
-	circle := circle{5}
-	square := squar{4}
+	square := squar{5}
+	circle := circle{4}
 	printArea(&circle)
 	printArea(&square)
 
