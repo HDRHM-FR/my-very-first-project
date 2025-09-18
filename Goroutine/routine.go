@@ -1,6 +1,7 @@
 package Goroutine
 
 import (
+	"errors"
 	"fmt"
 	"time"
 )
@@ -11,10 +12,10 @@ import (
 
 func Routine() {
 	go func() {
-		time.Sleep(29 * time.Millisecond)
-		_, err := Err(s, 4, 6, 2)
+		time.Sleep(1 * time.Millisecond)
+		_, err := CheckInputs(2, 6, 4, 3)
 		if err != nil {
-			panic("")
+			panic(err)
 		} else {
 			return
 		}
@@ -22,25 +23,21 @@ func Routine() {
 	time.Sleep(30 * time.Millisecond)
 }
 
-func Err(a, b, c, d float64) (float64, error) {
+func CheckInputs(a, b, c, d float64) (float64, error) {
 	var (
-		e = a + b
-		f = c + d
+		e      = a + b
+		f      = c + d
+		result = e * f
 	)
-	for {
-		_, err1 := fmt.Printf("first value :%v\n", e)
-		if err1 != nil {
-			fmt.Printf("please enter a valid number :%v\n ", err1)
-			continue
-		}
-		_, err2 := fmt.Printf("second value :%v\n", f)
-		if err2 != nil {
-			fmt.Printf("please enter a valid number :%v\n ", err2)
-			break
-		} else {
-			fmt.Printf("result :%v\n", f*e)
-		}
-	}
-	return 0, nil
 
+	fmt.Printf("first value :%v\n", e)
+	fmt.Printf("second value :%v\n", f)
+
+	if result < 10 {
+		return 0, errors.New("the multiplication is less than 10")
+	} else {
+		fmt.Printf("result :%v", result)
+	}
+
+	return result, nil
 }
