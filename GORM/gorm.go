@@ -1,0 +1,5 @@
+package GORM
+
+func Gorm() {
+
+}
