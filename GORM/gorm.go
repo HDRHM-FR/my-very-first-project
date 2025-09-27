@@ -1,5 +1,0 @@
-package GORM
-
-func Gorm() {
-
-}
