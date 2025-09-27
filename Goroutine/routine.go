@@ -9,6 +9,8 @@ import (
 // section : go routine
 // note : it is a simple mathmatic written with go routine
 // HEADS UP : i added the error handling to underestand it more
+// info : time.Sleep package means it has the given time to run the entire code .
+// more info : so if it runs out of time , the entire proccess will be shot down .
 
 func Routine() {
 	go func() {
